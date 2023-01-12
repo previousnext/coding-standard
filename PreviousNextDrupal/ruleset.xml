@@ -43,6 +43,9 @@
     </rule>
     <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHintSpacing" />
 
+    <!-- Squiz.PHP -->
+    <rule ref="Squiz.PHP.NonExecutableCode.Unreachable"><severity>0</severity></rule>
+
     <!-- Drupal -->
     <rule ref="Drupal" />
 
