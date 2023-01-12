@@ -5,11 +5,11 @@
 [![GitHub branch checks state](https://img.shields.io/github/checks-status/previousnext/coding-standard/master)][ci]
 [![License](http://poser.pugx.org/previousnext/coding-standard/license)](https://packagist.org/packages/previousnext/coding-standard)
 
-This is a PHP Codesniffer standard enhancing the [Drupal Coder][drupal-coder] 
+This is a PHP Codesniffer standard enhancing the [Drupal Coder][drupal-coder]
 project. It is designed to be utilised on full Drupal site projects, rather than
 core or contrib, or projects outside of Drupal.
 
-The standard improves upon the Drupal standard, while maintaining the general 
+The standard improves upon the Drupal standard, while maintaining the general
 style of Drupal.
 
 Rules are loosened where static analysis tools such as PHPStan are better at
@@ -34,7 +34,7 @@ MIT
 
 # Transitioning
 
-Consider using the [Baseliner][php-codesniffer-baseline] project when 
+Consider using the [Baseliner][php-codesniffer-baseline] project when
 transitioning. A quick `phpcbf` beforehand will eliminate most or all problems
 before they are added to a baseline.
 
@@ -112,7 +112,7 @@ function foo(array $data): int {
 To:
 
 Remove useless documentation for the function/method itself. Human code review
-must ensure the function/method/variable/param, etc, are self describing. 
+must ensure the function/method/variable/param, etc, are self describing.
 
 ```php
 /**
@@ -127,6 +127,17 @@ function doesAThing(array $data): int {
 # Style
 
 ## Added Sniffs
+
+#### PSR2.Methods.FunctionClosingBrace.SpacingBeforeClose
+#### SlevomatCodingStandard.Classes.ClassStructure
+#### SlevomatCodingStandard.Functions.RequireTrailingCommaInCall
+#### SlevomatCodingStandard.Functions.StaticClosure
+#### SlevomatCodingStandard.Functions.UnusedInheritedVariablePassedToClosure
+#### SlevomatCodingStandard.Namespaces.AlphabeticallySortedUses
+#### SlevomatCodingStandard.TypeHints.DeclareStrictTypes
+#### SlevomatCodingStandard.TypeHints.ReturnTypeHint
+#### SlevomatCodingStandard.TypeHints.ReturnTypeHintSpacing
+#### Squiz.WhiteSpace.FunctionOpeningBraceSpace.SpacingAfter
 
 ## Removed/Loosened Inherited Sniffs
 
