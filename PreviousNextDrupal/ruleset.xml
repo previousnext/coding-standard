@@ -3,8 +3,30 @@
     <arg name="extensions" value="php,module,inc,install,test,profile,theme"/>
     <arg name="ignore" value="*\.css,*\.md"/>
 
+    <!-- PSR2.Methods -->
+    <rule ref="PSR2.Methods.FunctionClosingBrace.SpacingBeforeClose"/>
+
+    <!-- SlevomatCodingStandard.Classes -->
+    <rule ref="SlevomatCodingStandard.Classes.ClassStructure">
+        <properties>
+            <property name="groups" type="array">
+                <element value="uses"/>
+                <element value="enum cases"/>
+                <element value="public constants"/>
+                <element value="constants"/>
+                <element value="properties"/>
+                <element value="constructor"/>
+                <!-- We cant order by public/protected methods yet as it would
+                     make PHPUnit setup() drift to bottom. Wait until resolved:
+                     https://github.com/slevomat/coding-standard/issues/1098 -->
+                <element value="methods"/>
+            </property>
+        </properties>
+    </rule>
+
     <!-- SlevomatCodingStandard.Functions -->
     <rule ref="SlevomatCodingStandard.Functions.RequireTrailingCommaInCall" />
+    <rule ref="SlevomatCodingStandard.Functions.UnusedInheritedVariablePassedToClosure" />
 
     <!-- Drupal -->
     <rule ref="Drupal" />
