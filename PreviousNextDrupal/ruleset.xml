@@ -3,6 +3,9 @@
     <arg name="extensions" value="php,module,inc,install,test,profile,theme"/>
     <arg name="ignore" value="*\.css,*\.md"/>
 
+    <!-- SlevomatCodingStandard.Namespaces -->
+    <rule ref="SlevomatCodingStandard.Namespaces.AlphabeticallySortedUses" />
+
     <!-- Drupal -->
     <rule ref="Drupal" />
 
