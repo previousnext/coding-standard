@@ -24,6 +24,9 @@
         </properties>
     </rule>
 
+    <!-- SlevomatCodingStandard.Functions -->
+    <rule ref="SlevomatCodingStandard.Functions.UnusedInheritedVariablePassedToClosure" />
+
     <!-- Drupal -->
     <rule ref="Drupal" />
 
