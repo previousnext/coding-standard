@@ -38,6 +38,9 @@
         </properties>
     </rule>
 
+    <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHint">
+        <exclude name="SlevomatCodingStandard.TypeHints.ReturnTypeHint.MissingTraversableTypeHintSpecification"/>
+    </rule>
     <!-- Drupal -->
     <rule ref="Drupal" />
 
