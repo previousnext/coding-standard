@@ -28,6 +28,9 @@
     <rule ref="SlevomatCodingStandard.Functions.RequireTrailingCommaInCall" />
     <rule ref="SlevomatCodingStandard.Functions.UnusedInheritedVariablePassedToClosure" />
 
+    <!-- SlevomatCodingStandard.Namespaces -->
+    <rule ref="SlevomatCodingStandard.Namespaces.AlphabeticallySortedUses" />
+
     <!-- Drupal -->
     <rule ref="Drupal" />
 
