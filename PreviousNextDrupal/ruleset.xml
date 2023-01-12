@@ -41,6 +41,8 @@
     <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHint">
         <exclude name="SlevomatCodingStandard.TypeHints.ReturnTypeHint.MissingTraversableTypeHintSpecification"/>
     </rule>
+    <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHintSpacing" />
+
     <!-- Drupal -->
     <rule ref="Drupal" />
 
