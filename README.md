@@ -146,6 +146,10 @@ Commenting rules are not auto-fixable, are usually boilerplate-y.
 
 Developers are entrusted to properly self-describe code. Suggestions to improve documentation are encouraged during human code review of MR/PR's.
 
+#### Squiz.PHP.NonExecutableCode.Unreachable
+
+This rule has trouble with newer PHP syntax, especially expression throwables. In any case this rule is best enforced with static analysis.
+
 ---
 
 _Drupal is a registered trademark of Dries Buytaert._
