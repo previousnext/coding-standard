@@ -2,7 +2,7 @@
 
 [![Latest Stable Version](http://poser.pugx.org/previousnext/coding-standard/v)](https://packagist.org/packages/previousnext/coding-standard)
 [![Total Downloads](http://poser.pugx.org/previousnext/coding-standard/downloads)](https://packagist.org/packages/previousnext/coding-standard)
-[![GitHub branch checks state](https://img.shields.io/github/checks-status/previousnext/coding-standard/main)][ci]
+[![GitHub branch checks state](https://img.shields.io/github/checks-status/previousnext/coding-standard/master)][ci]
 [![License](http://poser.pugx.org/previousnext/coding-standard/license)](https://packagist.org/packages/previousnext/coding-standard)
 
 This is a PHP Codesniffer standard enhancing the [Drupal Coder][drupal-coder] 
