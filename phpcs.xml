@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset>
+    <!--
+    WARNING!
+    This is the coding standard for the project itself.
+    The standard is located at ./PreviousNextDrupal/ruleset.xml
+    -->
+    <file>./PreviousNextDrupal</file>
+    <file>./tests</file>
+    <rule ref="PreviousNextDrupal" />
+    <arg name="report" value="full"/>
+
+    <!-- Most functions are tests, and are self documenting. -->
+    <rule ref="Drupal.Commenting.FunctionComment.Missing">
+        <exclude-pattern>./tests/*</exclude-pattern>
+    </rule>
+
+    <!-- Ignore all fixtures -->
+    <exclude-pattern>./tests/*/fixtures/*</exclude-pattern>
+</ruleset>

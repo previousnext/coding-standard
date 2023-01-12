@@ -1,0 +1,41 @@
+{
+    "name": "previousnext/coding-standard",
+    "type": "phpcodesniffer-standard",
+    "homepage": "https://github.com/previousnext/coding-standard",
+    "keywords": ["drupal", "phpcs"],
+    "require": {
+        "php": "^8.0",
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.7.2",
+        "drupal/coder": "^8.3.16",
+        "slevomat/coding-standard": "^8.7.1",
+        "squizlabs/php_codesniffer": "^3.7.1"
+    },
+    "require-dev": {
+        "phpstan/extension-installer": "^1.2",
+        "phpstan/phpstan": "^1.9.4",
+        "phpstan/phpstan-deprecation-rules": "^1.1.1",
+        "phpstan/phpstan-strict-rules": "^1.4.4",
+        "phpunit/phpunit": "^9.5.27"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "PreviousNext\\CodingStandard\\": "PreviousNextCodingStandard/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PreviousNext\\CodingStandard\\Tests\\": "tests"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "bin-dir": "bin",
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "phpstan/extension-installer": true
+        },
+        "sort-packages": true
+    }
+}

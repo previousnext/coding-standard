@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<ruleset name="PreviousNextDrupal">
+    <arg name="extensions" value="php,module,inc,install,test,profile,theme"/>
+    <arg name="ignore" value="*\.css,*\.md"/>
+
+    <!-- Drupal -->
+    <rule ref="Drupal" />
+
+    <!-- Drupal.Arrays -->
+    <rule ref="Drupal.Arrays.Array.LongLineDeclaration"><severity>0</severity></rule>
+
+    <!-- Drupal.Commenting -->
+    <rule ref="Drupal.Commenting.ClassComment.Short"><severity>0</severity></rule>
+    <rule ref="Drupal.Commenting.DocComment.MissingShort"><severity>0</severity></rule>
+    <!-- Drupal Coder doesn't interact properly with strict types autofix.
+         The @file doc is less of an issue nowadays as it's just for install
+         and module files. Even less so when using Hux. -->
+    <rule ref="Drupal.Commenting.FileComment.Missing"><severity>0</severity></rule>
+    <rule ref="Drupal.Commenting.FunctionComment.IncorrectParamVarName"><severity>0</severity></rule>
+    <rule ref="Drupal.Commenting.FunctionComment.InvalidReturn"><severity>0</severity></rule>
+    <rule ref="Drupal.Commenting.TodoComment.TodoFormat"><severity>0</severity></rule>
+    <!-- Do not require @var for properties since PHP has property typing -->
+    <rule ref="Drupal.Commenting.VariableComment.Missing"><severity>0</severity></rule>
+</ruleset>

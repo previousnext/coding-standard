@@ -1,0 +1,10 @@
+parameters:
+	level: 8
+	paths:
+		- ./PreviousNextDrupal
+		- ./tests
+	bootstrapFiles:
+		- %currentWorkingDirectory%/vendor/squizlabs/php_codesniffer/autoload.php
+	excludePaths:
+		- %currentWorkingDirectory%/tests/*/fixtures/*
+	checkGenericClassInNonGenericObjectType: false
