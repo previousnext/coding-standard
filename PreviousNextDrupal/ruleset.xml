@@ -31,6 +31,13 @@
     <!-- SlevomatCodingStandard.Namespaces -->
     <rule ref="SlevomatCodingStandard.Namespaces.AlphabeticallySortedUses" />
 
+    <!-- SlevomatCodingStandard.TypeHints -->
+    <rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes">
+        <properties>
+            <property name="spacesCountAroundEqualsSign" type="int" value="1" />
+        </properties>
+    </rule>
+
     <!-- Drupal -->
     <rule ref="Drupal" />
 
