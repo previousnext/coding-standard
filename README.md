@@ -165,5 +165,6 @@ This rule has trouble with newer PHP syntax, especially expression throwables. I
 
 _Drupal is a registered trademark of Dries Buytaert._
 
+ [ci]: https://github.com/previousnext/coding-standard/actions
  [drupal-coder]: https://www.drupal.org/project/coder
  [php-codesniffer-baseline]: https://github.com/123inkt/php-codesniffer-baseline
