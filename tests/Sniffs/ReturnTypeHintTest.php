@@ -4,8 +4,6 @@ declare(strict_types = 1);
 
 namespace PreviousNext\CodingStandard\Tests\Sniffs;
 
-use SlevomatCodingStandard\Sniffs\TypeHints\ReturnTypeHintSniff;
-
 /**
  * @covers \SlevomatCodingStandard\Sniffs\TypeHints\ReturnTypeHintSniff
  * @see https://github.com/slevomat/coding-standard/blob/master/doc/type-hints.md#slevomatcodingstandardtypehintsreturntypehint-
