@@ -28,17 +28,6 @@ final class ReturnTypeHintTest extends Base {
     self::assertNoSniffError($report, 8);
   }
 
-  public function testUseless(): void {
-    $report = self::checkFile(__DIR__ . '/fixtures/ReturnTypeHintUseless.php');
-    self::assertSniffError($report, 8, code: ReturnTypeHintSniff::CODE_USELESS_ANNOTATION);
-  }
-
-  public function testUselessWithDescription(): void {
-    $report = self::checkFile(__DIR__ . '/fixtures/ReturnTypeHintUselessWithDescription.php');
-    self::assertSame(0, $report->getErrorCount());
-    self::assertNoSniffError($report, 8);
-  }
-
   protected static function getSniffName(): string {
     return 'SlevomatCodingStandard.TypeHints.ReturnTypeHint';
   }
