@@ -161,10 +161,6 @@ Developers are entrusted to properly self-describe code. Suggestions to improve 
 
 This rule has trouble with newer PHP syntax, especially expression throwables. In any case this rule is best enforced with static analysis.
 
-#### SlevomatCodingStandard.TypeHints.ReturnTypeHint.UselessAnnotation
-
-This rule is too greedy about what it thinks is 'useless'. Unique detail is removed.
-
 ---
 
 _Drupal is a registered trademark of Dries Buytaert._
