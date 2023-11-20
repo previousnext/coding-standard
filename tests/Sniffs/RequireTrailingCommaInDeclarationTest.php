@@ -14,6 +14,11 @@ final class RequireTrailingCommaInDeclarationTest extends Base {
     self::assertNoSniffErrorInFile($report);
   }
 
+  public function testNoErrorSingleLine(): void {
+    $report = self::checkFile(__DIR__ . '/fixtures/RequireTrailingCommaInDeclarationSingleLineNoError.php');
+    self::assertNoSniffErrorInFile($report);
+  }
+
   public function testError(): void {
     $report = self::checkFile(__DIR__ . '/fixtures/RequireTrailingCommaInDeclarationError.php');
     self::assertSame(1, $report->getErrorCount());
