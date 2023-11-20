@@ -24,8 +24,18 @@
         </properties>
     </rule>
 
+    <rule ref="SlevomatCodingStandard.Classes.RequireMultiLineMethodSignature">
+        <properties>
+            <property name="minLineLength" value="80"/>
+            <property name="includedMethodPatterns" type="array">
+                <element value="/__construct/" />
+            </property>
+        </properties>
+    </rule>
+
     <!-- SlevomatCodingStandard.Functions -->
     <rule ref="SlevomatCodingStandard.Functions.RequireTrailingCommaInCall" />
+    <rule ref="SlevomatCodingStandard.Functions.RequireTrailingCommaInDeclaration" />
     <rule ref="SlevomatCodingStandard.Functions.UnusedInheritedVariablePassedToClosure" />
 
     <!-- SlevomatCodingStandard.Namespaces -->
