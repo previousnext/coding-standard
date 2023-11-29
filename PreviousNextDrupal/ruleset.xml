@@ -44,7 +44,7 @@
     <!-- SlevomatCodingStandard.TypeHints -->
     <rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes">
         <properties>
-            <property name="spacesCountAroundEqualsSign" type="int" value="1" />
+            <property name="spacesCountAroundEqualsSign" type="int" value="0" />
         </properties>
     </rule>
 
