@@ -4,7 +4,7 @@
 // rule of this standard until it has been reworked.
 // @codingStandardsIgnoreFile
 
-declare(strict_types = 1);
+declare(strict_types=1);
 
 namespace PreviousNext\CodingStandard\Tests\Sniffs;
 
