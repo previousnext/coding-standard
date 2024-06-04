@@ -132,6 +132,7 @@ function doesAThing(array $data): int {
 #### SlevomatCodingStandard.Classes.ClassStructure
 #### SlevomatCodingStandard.Classes.RequireMultiLineMethodSignature
 #### SlevomatCodingStandard.Commenting.UselessInheritDocComment
+#### SlevomatCodingStandard.ControlStructures.RequireNullSafeObjectOperator
 #### SlevomatCodingStandard.Functions.RequireTrailingCommaInCall
 #### SlevomatCodingStandard.Functions.RequireTrailingCommaInDeclaration
 #### SlevomatCodingStandard.Functions.StaticClosure

@@ -36,6 +36,9 @@
     <!-- SlevomatCodingStandard.Commenting -->
     <rule ref="SlevomatCodingStandard.Commenting.UselessInheritDocComment" />
 
+    <!-- SlevomatCodingStandard.ControlStructures -->
+    <rule ref="SlevomatCodingStandard.ControlStructures.RequireNullSafeObjectOperator" />
+
     <!-- SlevomatCodingStandard.Functions -->
     <rule ref="SlevomatCodingStandard.Functions.RequireTrailingCommaInCall" />
     <rule ref="SlevomatCodingStandard.Functions.RequireTrailingCommaInDeclaration" />
