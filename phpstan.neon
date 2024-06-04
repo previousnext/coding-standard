@@ -7,4 +7,6 @@ parameters:
 		- %currentWorkingDirectory%/vendor/squizlabs/php_codesniffer/autoload.php
 	excludePaths:
 		- %currentWorkingDirectory%/tests/*/fixtures/*
-	checkGenericClassInNonGenericObjectType: false
+	ignoreErrors:
+		-
+			identifier: missingType.generics

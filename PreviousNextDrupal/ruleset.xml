@@ -62,6 +62,14 @@
     <!-- Drupal -->
     <rule ref="Drupal" />
 
+    <!-- Undo the DeclareStrictTypesMissing ignore introduced by
+         https://www.drupal.org/project/coder/issues/3407995
+         This must be placed after the above ref="Drupal"
+         -->
+    <rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes.DeclareStrictTypesMissing">
+        <severity>5</severity>
+    </rule>
+
     <!-- Drupal.Arrays -->
     <rule ref="Drupal.Arrays.Array.LongLineDeclaration"><severity>0</severity></rule>
 
@@ -77,4 +85,8 @@
     <rule ref="Drupal.Commenting.TodoComment.TodoFormat"><severity>0</severity></rule>
     <!-- Do not require @var for properties since PHP has property typing -->
     <rule ref="Drupal.Commenting.VariableComment.Missing"><severity>0</severity></rule>
+
+    <!-- Drupal.Functions -->
+    <!-- This duplicates SlevomatCodingStandard.Functions.RequireTrailingCommaInDeclaration -->
+    <rule ref="Drupal.Functions.MultiLineFunctionDeclaration.MissingTrailingComma"><severity>0</severity></rule>
 </ruleset>
