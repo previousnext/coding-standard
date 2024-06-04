@@ -4,9 +4,10 @@ declare(strict_types=1);
 
 namespace PreviousNext\CodingStandard\Tests\Ignore;
 
-/**
- * @covers \Drupal\Sniffs\Commenting\VariableCommentSniff
- */
+use Drupal\Sniffs\Commenting\VariableCommentSniff;
+use PHPUnit\Framework\Attributes\CoversClass;
+
+#[CoversClass(VariableCommentSniff::class)]
 final class IgnoreDrupalCommentingVariableCommentMissingTest extends Base {
 
   public function testIgnored(): void {

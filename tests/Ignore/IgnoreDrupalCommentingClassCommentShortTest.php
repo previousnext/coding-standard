@@ -4,9 +4,10 @@ declare(strict_types=1);
 
 namespace PreviousNext\CodingStandard\Tests\Ignore;
 
-/**
- * @covers \Drupal\Sniffs\Commenting\ClassCommentSniff
- */
+use Drupal\Sniffs\Commenting\ClassCommentSniff;
+use PHPUnit\Framework\Attributes\CoversClass;
+
+#[CoversClass(ClassCommentSniff::class)]
 final class IgnoreDrupalCommentingClassCommentShortTest extends Base {
 
   /**

@@ -4,7 +4,7 @@
     "homepage": "https://github.com/previousnext/coding-standard",
     "keywords": ["drupal", "phpcs"],
     "require": {
-        "php": "^8.1",
+        "php": "^8.2",
         "dealerdirect/phpcodesniffer-composer-installer": "^1.0.0",
         "drupal/coder": "^8.3.24",
         "slevomat/coding-standard": "^8.15.0",
@@ -15,7 +15,7 @@
         "phpstan/phpstan": "^1.11.3",
         "phpstan/phpstan-deprecation-rules": "^1.2.0",
         "phpstan/phpstan-strict-rules": "^1.6.0",
-        "phpunit/phpunit": "^9.6.19"
+        "phpunit/phpunit": "^11"
     },
     "license": "MIT",
     "autoload": {

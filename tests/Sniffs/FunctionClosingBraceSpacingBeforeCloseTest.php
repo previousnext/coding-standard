@@ -4,9 +4,10 @@ declare(strict_types=1);
 
 namespace PreviousNext\CodingStandard\Tests\Sniffs;
 
-/**
- * @covers \PHP_CodeSniffer\Standards\Squiz\Sniffs\WhiteSpace\FunctionOpeningBraceSpaceSniff
- */
+use PHP_CodeSniffer\Standards\Squiz\Sniffs\WhiteSpace\FunctionOpeningBraceSpaceSniff;
+use PHPUnit\Framework\Attributes\CoversClass;
+
+#[CoversClass(FunctionOpeningBraceSpaceSniff::class)]
 final class FunctionClosingBraceSpacingBeforeCloseTest extends Base {
 
   public function testNoError(): void {

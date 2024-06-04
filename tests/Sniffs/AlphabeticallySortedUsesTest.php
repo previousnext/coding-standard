@@ -4,11 +4,10 @@ declare(strict_types=1);
 
 namespace PreviousNext\CodingStandard\Tests\Sniffs;
 
+use PHPUnit\Framework\Attributes\CoversClass;
 use SlevomatCodingStandard\Sniffs\Namespaces\AlphabeticallySortedUsesSniff;
 
-/**
- * @covers \SlevomatCodingStandard\Sniffs\Namespaces\AlphabeticallySortedUsesSniff
- */
+#[CoversClass(AlphabeticallySortedUsesSniff::class)]
 final class AlphabeticallySortedUsesTest extends Base {
 
   public function testNoError(): void {

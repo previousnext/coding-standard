@@ -4,11 +4,10 @@ declare(strict_types=1);
 
 namespace PreviousNext\CodingStandard\Tests\Sniffs;
 
+use PHPUnit\Framework\Attributes\CoversClass;
 use SlevomatCodingStandard\Sniffs\Commenting\UselessInheritDocCommentSniff;
 
-/**
- * @covers \SlevomatCodingStandard\Sniffs\Commenting\UselessInheritDocCommentSniff
- */
+#[CoversClass(UselessInheritDocCommentSniff::class)]
 final class UselessInheritDocCommentTest extends Base {
 
   public function testNoError(): void {

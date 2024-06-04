@@ -4,11 +4,10 @@ declare(strict_types=1);
 
 namespace PreviousNext\CodingStandard\Tests\Sniffs;
 
+use PHPUnit\Framework\Attributes\CoversClass;
 use SlevomatCodingStandard\Sniffs\TypeHints\DeclareStrictTypesSniff;
 
-/**
- * @covers \SlevomatCodingStandard\Sniffs\TypeHints\DeclareStrictTypesSniff
- */
+#[CoversClass(DeclareStrictTypesSniff::class)]
 final class StrictTypesTest extends Base {
 
   public function testNoError(): void {

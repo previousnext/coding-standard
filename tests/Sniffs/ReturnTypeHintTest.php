@@ -4,12 +4,13 @@ declare(strict_types=1);
 
 namespace PreviousNext\CodingStandard\Tests\Sniffs;
 
+use PHPUnit\Framework\Attributes\CoversClass;
 use SlevomatCodingStandard\Sniffs\TypeHints\ReturnTypeHintSniff;
 
 /**
- * @covers \SlevomatCodingStandard\Sniffs\TypeHints\ReturnTypeHintSniff
  * @see https://github.com/slevomat/coding-standard/blob/master/doc/type-hints.md#slevomatcodingstandardtypehintsreturntypehint-
  */
+#[CoversClass(ReturnTypeHintSniff::class)]
 final class ReturnTypeHintTest extends Base {
 
   public function testNoError(): void {
@@ -20,7 +21,7 @@ final class ReturnTypeHintTest extends Base {
   /**
    * Ensures traversables do not need to be fully documented.
    *
-   * @covers \SlevomatCodingStandard\Sniffs\TypeHints\ReturnTypeHintSniff::CODE_MISSING_TRAVERSABLE_TYPE_HINT_SPECIFICATION
+   * @see \SlevomatCodingStandard\Sniffs\TypeHints\ReturnTypeHintSniff::CODE_MISSING_TRAVERSABLE_TYPE_HINT_SPECIFICATION
    */
   public function testIgnoreTraversable(): void {
     $report = self::checkFile(__DIR__ . '/fixtures/ReturnTypeHintIgnoreTraversable.php');

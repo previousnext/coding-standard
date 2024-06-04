@@ -4,11 +4,10 @@ declare(strict_types=1);
 
 namespace PreviousNext\CodingStandard\Tests\Sniffs;
 
+use PHPUnit\Framework\Attributes\CoversClass;
 use SlevomatCodingStandard\Sniffs\Classes\ClassStructureSniff;
 
-/**
- * @covers \SlevomatCodingStandard\Sniffs\Classes\ClassStructureSniff
- */
+#[CoversClass(ClassStructureSniff::class)]
 final class ClassStructureTest extends Base {
 
   public function testNoError(): void {

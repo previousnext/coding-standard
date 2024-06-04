@@ -4,9 +4,10 @@ declare(strict_types=1);
 
 namespace PreviousNext\CodingStandard\Tests\Ignore;
 
-/**
- * @covers \Drupal\Sniffs\Arrays\ArraySniff
- */
+use Drupal\Sniffs\Arrays\ArraySniff;
+use PHPUnit\Framework\Attributes\CoversClass;
+
+#[CoversClass(ArraySniff::class)]
 final class IgnoreDrupalArraysArrayLongLineDeclarationTest extends Base {
 
   /**
