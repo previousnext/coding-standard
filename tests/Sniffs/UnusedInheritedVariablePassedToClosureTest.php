@@ -4,11 +4,10 @@ declare(strict_types=1);
 
 namespace PreviousNext\CodingStandard\Tests\Sniffs;
 
+use PHPUnit\Framework\Attributes\CoversClass;
 use SlevomatCodingStandard\Sniffs\Functions\UnusedInheritedVariablePassedToClosureSniff;
 
-/**
- * @covers \SlevomatCodingStandard\Sniffs\Functions\UnusedInheritedVariablePassedToClosureSniff
- */
+#[CoversClass(UnusedInheritedVariablePassedToClosureSniff::class)]
 final class UnusedInheritedVariablePassedToClosureTest extends Base {
 
   public function testNoError(): void {

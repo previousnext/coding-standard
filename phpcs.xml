@@ -10,7 +10,10 @@
     <rule ref="PreviousNextDrupal" />
     <arg name="report" value="full"/>
 
-    <!-- Most functions are tests, and are self documenting. -->
+    <!-- Most classes and functions are tests, and are self documenting. -->
+    <rule ref="Drupal.Commenting.ClassComment.Missing">
+        <exclude-pattern>./tests/*</exclude-pattern>
+    </rule>
     <rule ref="Drupal.Commenting.FunctionComment.Missing">
         <exclude-pattern>./tests/*</exclude-pattern>
     </rule>

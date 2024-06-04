@@ -4,9 +4,10 @@ declare(strict_types=1);
 
 namespace PreviousNext\CodingStandard\Tests\Sniffs;
 
-/**
- * @covers \SlevomatCodingStandard\Sniffs\Functions\StaticClosureSniff
- */
+use PHPUnit\Framework\Attributes\CoversClass;
+use SlevomatCodingStandard\Sniffs\Functions\StaticClosureSniff;
+
+#[CoversClass(StaticClosureSniff::class)]
 final class FunctionsStaticClosureTest extends Base {
 
   public function testNoError(): void {

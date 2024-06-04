@@ -4,9 +4,10 @@ declare(strict_types=1);
 
 namespace PreviousNext\CodingStandard\Tests\Ignore;
 
-/**
- * @covers \PHP_CodeSniffer\Standards\Squiz\Sniffs\PHP\NonExecutableCodeSniff
- */
+use PHP_CodeSniffer\Standards\Squiz\Sniffs\PHP\NonExecutableCodeSniff;
+use PHPUnit\Framework\Attributes\CoversClass;
+
+#[CoversClass(NonExecutableCodeSniff::class)]
 final class IgnoreUnreachableTest extends Base {
 
   public function testIgnored(): void {

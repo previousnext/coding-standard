@@ -4,9 +4,10 @@ declare(strict_types=1);
 
 namespace PreviousNext\CodingStandard\Tests\Sniffs;
 
-/**
- * @covers \SlevomatCodingStandard\Sniffs\Classes\RequireMultiLineMethodSignatureSniff
- */
+use PHPUnit\Framework\Attributes\CoversClass;
+use SlevomatCodingStandard\Sniffs\Classes\RequireMultiLineMethodSignatureSniff;
+
+#[CoversClass(RequireMultiLineMethodSignatureSniff::class)]
 final class RequireMultiLineMethodSignatureTest extends Base {
 
   public function testNoError(): void {

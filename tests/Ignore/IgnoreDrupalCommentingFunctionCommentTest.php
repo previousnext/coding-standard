@@ -4,9 +4,10 @@ declare(strict_types=1);
 
 namespace PreviousNext\CodingStandard\Tests\Ignore;
 
-/**
- * @covers \PHP_CodeSniffer\Standards\Squiz\Sniffs\Commenting\FunctionCommentSniff
- */
+use PHP_CodeSniffer\Standards\Squiz\Sniffs\Commenting\FunctionCommentSniff;
+use PHPUnit\Framework\Attributes\CoversClass;
+
+#[CoversClass(FunctionCommentSniff::class)]
 final class IgnoreDrupalCommentingFunctionCommentTest extends Base {
 
   /**

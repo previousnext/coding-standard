@@ -4,11 +4,10 @@ declare(strict_types=1);
 
 namespace PreviousNext\CodingStandard\Tests\Sniffs;
 
+use PHPUnit\Framework\Attributes\CoversClass;
 use SlevomatCodingStandard\Sniffs\ControlStructures\RequireNullSafeObjectOperatorSniff;
 
-/**
- * @covers \SlevomatCodingStandard\Sniffs\ControlStructures\RequireNullSafeObjectOperatorSniff
- */
+#[CoversClass(RequireNullSafeObjectOperatorSniff::class)]
 final class RequireNullSafeObjectOperatorTest extends Base {
 
   public function testNoError(): void {

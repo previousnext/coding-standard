@@ -4,11 +4,10 @@ declare(strict_types=1);
 
 namespace PreviousNext\CodingStandard\Tests\Sniffs;
 
+use PHPUnit\Framework\Attributes\CoversClass;
 use SlevomatCodingStandard\Sniffs\Functions\RequireTrailingCommaInDeclarationSniff;
 
-/**
- * @covers \SlevomatCodingStandard\Sniffs\Functions\RequireTrailingCommaInDeclarationSniff
- */
+#[CoversClass(RequireTrailingCommaInDeclarationSniff::class)]
 final class RequireTrailingCommaInCallTest extends Base {
 
   public function testNoError(): void {

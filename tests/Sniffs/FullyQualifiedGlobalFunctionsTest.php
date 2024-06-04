@@ -4,11 +4,10 @@ declare(strict_types=1);
 
 namespace PreviousNext\CodingStandard\Tests\Sniffs;
 
+use PHPUnit\Framework\Attributes\CoversClass;
 use SlevomatCodingStandard\Sniffs\Namespaces\FullyQualifiedGlobalFunctionsSniff;
 
-/**
- * @covers \SlevomatCodingStandard\Sniffs\Namespaces\FullyQualifiedGlobalFunctionsSniff
- */
+#[CoversClass(FullyQualifiedGlobalFunctionsSniff::class)]
 final class FullyQualifiedGlobalFunctionsTest extends Base {
 
   public function testNoError(): void {
