@@ -4,7 +4,7 @@
     "homepage": "https://github.com/previousnext/coding-standard",
     "keywords": ["drupal", "phpcs"],
     "require": {
-        "php": "^8.1",
+        "php": "^8.2",
         "dealerdirect/phpcodesniffer-composer-installer": "^1.0.0",
         "drupal/coder": "^8.3.24",
         "slevomat/coding-standard": "^8.15.0",
