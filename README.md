@@ -138,6 +138,10 @@ function doesAThing(array $data): int {
 #### SlevomatCodingStandard.Functions.StaticClosure
 #### SlevomatCodingStandard.Functions.UnusedInheritedVariablePassedToClosure
 #### SlevomatCodingStandard.Namespaces.AlphabeticallySortedUses
+#### SlevomatCodingStandard.Namespaces.FullyQualifiedGlobalFunctions
+
+PHPStorm can be configured with Editor -> General -> Auto Import: _Function_: `Prefer FQN`
+
 #### SlevomatCodingStandard.TypeHints.DeclareStrictTypes
 #### SlevomatCodingStandard.TypeHints.ReturnTypeHint
 #### SlevomatCodingStandard.TypeHints.ReturnTypeHintSpacing
