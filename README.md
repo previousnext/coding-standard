@@ -131,6 +131,7 @@ function doesAThing(array $data): int {
 #### PSR2.Methods.FunctionClosingBrace.SpacingBeforeClose
 #### SlevomatCodingStandard.Classes.ClassStructure
 #### SlevomatCodingStandard.Classes.RequireMultiLineMethodSignature
+#### SlevomatCodingStandard.Commenting.UselessInheritDocComment
 #### SlevomatCodingStandard.Functions.RequireTrailingCommaInCall
 #### SlevomatCodingStandard.Functions.RequireTrailingCommaInDeclaration
 #### SlevomatCodingStandard.Functions.StaticClosure

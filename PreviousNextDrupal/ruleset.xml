@@ -33,6 +33,9 @@
         </properties>
     </rule>
 
+    <!-- SlevomatCodingStandard.Commenting -->
+    <rule ref="SlevomatCodingStandard.Commenting.UselessInheritDocComment" />
+
     <!-- SlevomatCodingStandard.Functions -->
     <rule ref="SlevomatCodingStandard.Functions.RequireTrailingCommaInCall" />
     <rule ref="SlevomatCodingStandard.Functions.RequireTrailingCommaInDeclaration" />
