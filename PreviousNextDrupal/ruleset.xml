@@ -47,6 +47,7 @@
 
     <!-- SlevomatCodingStandard.Namespaces -->
     <rule ref="SlevomatCodingStandard.Namespaces.AlphabeticallySortedUses" />
+    <rule ref="SlevomatCodingStandard.Namespaces.FullyQualifiedGlobalFunctions" />
 
     <!-- SlevomatCodingStandard.TypeHints -->
     <rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes">
