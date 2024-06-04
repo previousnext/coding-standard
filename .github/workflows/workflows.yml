@@ -5,9 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        php-versions: ['8.0', '8.1', '8.2']
+        php-versions: ['8.1', '8.2', '8.3']
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - uses: "shivammathur/setup-php@v2"
         with:
           php-version: ${{ matrix.php-versions }}
@@ -23,9 +23,9 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        php-versions: ['8.0', '8.1', '8.2']
+        php-versions: ['8.1', '8.2', '8.3']
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - uses: "shivammathur/setup-php@v2"
         with:
           php-version: ${{ matrix.php-versions }}
@@ -41,10 +41,10 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        php-versions: ['8.0', '8.1', '8.2']
+        php-versions: ['8.1', '8.2', '8.3']
         dependency-versions: ['highest', 'lowest']
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - uses: "shivammathur/setup-php@v2"
         with:
           php-version: ${{ matrix.php-versions }}

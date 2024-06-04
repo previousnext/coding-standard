@@ -24,8 +24,25 @@
         </properties>
     </rule>
 
+    <rule ref="SlevomatCodingStandard.Classes.RequireMultiLineMethodSignature">
+        <properties>
+            <property name="minLineLength" value="80"/>
+            <property name="includedMethodPatterns" type="array">
+                <element value="/__construct/" />
+            </property>
+        </properties>
+    </rule>
+
+    <!-- SlevomatCodingStandard.Commenting -->
+    <rule ref="SlevomatCodingStandard.Commenting.UselessInheritDocComment" />
+
+    <!-- SlevomatCodingStandard.ControlStructures -->
+    <rule ref="SlevomatCodingStandard.ControlStructures.RequireNullSafeObjectOperator" />
+
     <!-- SlevomatCodingStandard.Functions -->
     <rule ref="SlevomatCodingStandard.Functions.RequireTrailingCommaInCall" />
+    <rule ref="SlevomatCodingStandard.Functions.RequireTrailingCommaInDeclaration" />
+    <rule ref="SlevomatCodingStandard.Functions.StaticClosure" />
     <rule ref="SlevomatCodingStandard.Functions.UnusedInheritedVariablePassedToClosure" />
 
     <!-- SlevomatCodingStandard.Namespaces -->
@@ -35,7 +52,7 @@
     <!-- SlevomatCodingStandard.TypeHints -->
     <rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes">
         <properties>
-            <property name="spacesCountAroundEqualsSign" type="int" value="1" />
+            <property name="spacesCountAroundEqualsSign" type="int" value="0" />
         </properties>
     </rule>
 
@@ -43,7 +60,6 @@
         <exclude name="SlevomatCodingStandard.TypeHints.ReturnTypeHint.MissingTraversableTypeHintSpecification"/>
     </rule>
     <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHintSpacing" />
-    <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHint.UselessAnnotation"><severity>0</severity></rule>
 
     <!-- Squiz.PHP -->
     <rule ref="Squiz.PHP.NonExecutableCode.Unreachable"><severity>0</severity></rule>
@@ -53,6 +69,14 @@
 
     <!-- Drupal -->
     <rule ref="Drupal" />
+
+    <!-- Undo the DeclareStrictTypesMissing ignore introduced by
+         https://www.drupal.org/project/coder/issues/3407995
+         This must be placed after the above ref="Drupal"
+         -->
+    <rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes.DeclareStrictTypesMissing">
+        <severity>5</severity>
+    </rule>
 
     <!-- Drupal.Arrays -->
     <rule ref="Drupal.Arrays.Array.LongLineDeclaration"><severity>0</severity></rule>
@@ -69,4 +93,8 @@
     <rule ref="Drupal.Commenting.TodoComment.TodoFormat"><severity>0</severity></rule>
     <!-- Do not require @var for properties since PHP has property typing -->
     <rule ref="Drupal.Commenting.VariableComment.Missing"><severity>0</severity></rule>
+
+    <!-- Drupal.Functions -->
+    <!-- This duplicates SlevomatCodingStandard.Functions.RequireTrailingCommaInDeclaration -->
+    <rule ref="Drupal.Functions.MultiLineFunctionDeclaration.MissingTrailingComma"><severity>0</severity></rule>
 </ruleset>

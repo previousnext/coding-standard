@@ -6,8 +6,8 @@
     "require": {
         "php": "^8.0",
         "dealerdirect/phpcodesniffer-composer-installer": "^1.0.0",
-        "drupal/coder": "^8.3.16",
-        "slevomat/coding-standard": "^8.7.1",
+        "drupal/coder": "^8.3.24",
+        "slevomat/coding-standard": "^8.13.2",
         "squizlabs/php_codesniffer": "^3.7.1"
     },
     "require-dev": {

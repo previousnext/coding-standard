@@ -2,7 +2,7 @@
 
 [![Latest Stable Version](http://poser.pugx.org/previousnext/coding-standard/v)](https://packagist.org/packages/previousnext/coding-standard)
 [![Total Downloads](http://poser.pugx.org/previousnext/coding-standard/downloads)](https://packagist.org/packages/previousnext/coding-standard)
-[![GitHub branch checks state](https://img.shields.io/github/checks-status/previousnext/coding-standard/master)][ci]
+[![GitHub branch checks state](https://img.shields.io/github/checks-status/previousnext/coding-standard/main)][ci]
 [![License](http://poser.pugx.org/previousnext/coding-standard/license)](https://packagist.org/packages/previousnext/coding-standard)
 
 This is a PHP Codesniffer standard enhancing the [Drupal Coder][drupal-coder]
@@ -130,7 +130,11 @@ function doesAThing(array $data): int {
 
 #### PSR2.Methods.FunctionClosingBrace.SpacingBeforeClose
 #### SlevomatCodingStandard.Classes.ClassStructure
+#### SlevomatCodingStandard.Classes.RequireMultiLineMethodSignature
+#### SlevomatCodingStandard.Commenting.UselessInheritDocComment
+#### SlevomatCodingStandard.ControlStructures.RequireNullSafeObjectOperator
 #### SlevomatCodingStandard.Functions.RequireTrailingCommaInCall
+#### SlevomatCodingStandard.Functions.RequireTrailingCommaInDeclaration
 #### SlevomatCodingStandard.Functions.StaticClosure
 #### SlevomatCodingStandard.Functions.UnusedInheritedVariablePassedToClosure
 #### SlevomatCodingStandard.Namespaces.AlphabeticallySortedUses
@@ -160,10 +164,6 @@ Developers are entrusted to properly self-describe code. Suggestions to improve 
 #### Squiz.PHP.NonExecutableCode.Unreachable
 
 This rule has trouble with newer PHP syntax, especially expression throwables. In any case this rule is best enforced with static analysis.
-
-#### SlevomatCodingStandard.TypeHints.ReturnTypeHint.UselessAnnotation
-
-This rule is too greedy about what it thinks is 'useless'. Unique detail is removed.
 
 ---
 
