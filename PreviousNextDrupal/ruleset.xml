@@ -36,6 +36,7 @@
     <!-- SlevomatCodingStandard.Functions -->
     <rule ref="SlevomatCodingStandard.Functions.RequireTrailingCommaInCall" />
     <rule ref="SlevomatCodingStandard.Functions.RequireTrailingCommaInDeclaration" />
+    <rule ref="SlevomatCodingStandard.Functions.StaticClosure" />
     <rule ref="SlevomatCodingStandard.Functions.UnusedInheritedVariablePassedToClosure" />
 
     <!-- SlevomatCodingStandard.Namespaces -->
