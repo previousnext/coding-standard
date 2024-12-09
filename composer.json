@@ -12,9 +12,9 @@
     },
     "require-dev": {
         "phpstan/extension-installer": "^1.4.3",
-        "phpstan/phpstan": "^1.12.12",
-        "phpstan/phpstan-deprecation-rules": "^1.2.1",
-        "phpstan/phpstan-strict-rules": "^1.6.1",
+        "phpstan/phpstan": "^2.0.3",
+        "phpstan/phpstan-deprecation-rules": "^2.0.1",
+        "phpstan/phpstan-strict-rules": "^2",
         "phpunit/phpunit": "^11.5"
     },
     "license": "MIT",
