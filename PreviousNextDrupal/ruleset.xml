@@ -9,17 +9,43 @@
     <!-- SlevomatCodingStandard.Classes -->
     <rule ref="SlevomatCodingStandard.Classes.ClassStructure">
         <properties>
+            <property name="methodGroups" type="array">
+                <element key="service init" value="create, createInstance"/>
+                <element key="service after" value="getSubscribedEvents, __toString"/>
+                <element key="entity before" value="baseFieldDefinitions"/>
+                <element key="form before" value="getFormId, getEditableConfigNames"/>
+                <element key="entity form before" value="form"/>
+                <element key="entity form after" value="actions, save"/>
+                <element key="forms" value="buildForm, validateForm, submitForm"/>
+                <element key="phpunit before" value="setUp"/>
+                <element key="phpunit after" value="tearDown"/>
+            </property>
+
             <property name="groups" type="array">
+                <!-- Top -->
                 <element value="uses"/>
                 <element value="enum cases"/>
                 <element value="public constants"/>
                 <element value="constants"/>
                 <element value="properties"/>
                 <element value="constructor"/>
-                <!-- We cant order by public/protected methods yet as it would
-                     make PHPUnit setup() drift to bottom. Wait until resolved:
-                     https://github.com/slevomat/coding-standard/issues/1098 -->
+                <element value="service init"/>
+                <element value="service after"/>
+                <element value="invoke method"/>
+                <element value="entity form before"/>
+                <element value="form before"/>
+                <element value="entity before"/>
+                <element value="phpunit before"/>
+                <!-- Middle -->
+                <element value="forms"/>
+                <element value="public methods"/>
                 <element value="methods"/>
+                <element value="static methods"/>
+                <element value="private methods"/>
+                <!-- Bottom -->
+                <element value="entity form after"/>
+                <element value="phpunit after"/>
+                <element value="service after"/>
             </property>
         </properties>
     </rule>
