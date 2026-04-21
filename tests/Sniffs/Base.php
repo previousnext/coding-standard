@@ -1,8 +1,7 @@
 <?php
-
+// phpcs:ignoreFile
 // Most of this file ported from slevomat/coding-standard and is immune from
 // rule of this standard until it has been reworked.
-// @codingStandardsIgnoreFile
 
 declare(strict_types=1);
 

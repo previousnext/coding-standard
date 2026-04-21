@@ -21,8 +21,8 @@ final class AlphabeticallySortedUsesTest extends Base {
     self::assertSniffError($report, 8, AlphabeticallySortedUsesSniff::CODE_INCORRECT_ORDER);
   }
 
-  protected static function getSniffName(): string {
-    return 'SlevomatCodingStandard.Namespaces.AlphabeticallySortedUses';
+  protected static function getSniffClassName(): string {
+    return AlphabeticallySortedUsesSniff::class;
   }
 
 }

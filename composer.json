@@ -5,17 +5,17 @@
     "keywords": ["drupal", "phpcs"],
     "require": {
         "php": "^8.2",
-        "dealerdirect/phpcodesniffer-composer-installer": "^1.0.0",
-        "drupal/coder": "^8.3.26",
-        "slevomat/coding-standard": "^8.16.0",
-        "squizlabs/php_codesniffer": "^3.11.1"
+        "dealerdirect/phpcodesniffer-composer-installer": "^1.2",
+        "drupal/coder": "^9.0",
+        "slevomat/coding-standard": "^8.28.1",
+        "squizlabs/php_codesniffer": "^4.0.1"
     },
     "require-dev": {
         "phpstan/extension-installer": "^1.4.3",
-        "phpstan/phpstan": "^2.0.3",
-        "phpstan/phpstan-deprecation-rules": "^2.0.1",
-        "phpstan/phpstan-strict-rules": "^2",
-        "phpunit/phpunit": "^11.5"
+        "phpstan/phpstan": "^2.1.50",
+        "phpstan/phpstan-deprecation-rules": "^2.0.4",
+        "phpstan/phpstan-strict-rules": "^2.0.10",
+        "phpunit/phpunit": "^11.5.55"
     },
     "license": "MIT",
     "autoload": {

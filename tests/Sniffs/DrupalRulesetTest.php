@@ -17,7 +17,7 @@ final class DrupalRulesetTest extends Base {
   public function testMissing(): void {
     $report = self::checkFile(__DIR__ . '/fixtures/DrupalRulesetError.php');
     self::assertSame(2, $report->getErrorCount());
-    self::assertSniffError($report, 5, sniffName: 'Drupal.ControlStructures.InlineControlStructure', code: 'NotAllowed');
+    self::assertSniffError($report, 5, sniffName: 'Generic.ControlStructures.InlineControlStructure', code: 'NotAllowed');
     self::assertSniffError($report, 5, sniffName: 'Generic.PHP.UpperCaseConstant', code: 'Found');
   }
 
