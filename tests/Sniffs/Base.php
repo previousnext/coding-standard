@@ -45,8 +45,9 @@ abstract class Base extends TestCase {
 
     $codeSniffer->init();
 
-    if (count($sniffProperties) > 0) {
-      $codeSniffer->ruleset->ruleset[self::getSniffName()]['properties'] = $sniffProperties;
+    $sniffName = self::getSniffName();
+    if (count($sniffProperties) > 0 && $sniffName !== null) {
+      $codeSniffer->ruleset->ruleset[$sniffName]['properties'] = $sniffProperties;
     }
 
     $sniffClassName = static::getSniffClassName();
