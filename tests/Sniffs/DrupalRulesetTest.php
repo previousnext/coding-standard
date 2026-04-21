@@ -17,10 +17,10 @@ final class DrupalRulesetTest extends Base {
   public function testMissing(): void {
     $report = self::checkFile(__DIR__ . '/fixtures/DrupalRulesetError.php');
     self::assertSame(2, $report->getErrorCount());
-    // Sniff name changed in drupal/coder 9.x.
-    $inlineControlSniff = self::isCoderVersion9OrHigher()
-        ? 'Generic.ControlStructures.InlineControlStructure'
-        : 'Drupal.ControlStructures.InlineControlStructure';
+    // Sniff removed in drupal/coder 9.x.
+    $inlineControlSniff = \class_exists(\Drupal\Sniffs\ControlStructures\InlineControlStructureSniff::class)
+        ? 'Drupal.ControlStructures.InlineControlStructure'
+        : 'Generic.ControlStructures.InlineControlStructure';
     self::assertSniffError($report, 5, sniffName: $inlineControlSniff, code: 'NotAllowed');
     self::assertSniffError($report, 5, sniffName: 'Generic.PHP.UpperCaseConstant', code: 'Found');
   }
