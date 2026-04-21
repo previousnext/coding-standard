@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace PreviousNext\CodingStandard\Tests\Sniffs;
 
+use Drupal\Sniffs\ControlStructures\InlineControlStructureSniff;
+
 /**
  * Tests inherits from Drupal ruleset.
  */
@@ -18,7 +20,7 @@ final class DrupalRulesetTest extends Base {
     $report = self::checkFile(__DIR__ . '/fixtures/DrupalRulesetError.php');
     self::assertSame(2, $report->getErrorCount());
     // Sniff removed in drupal/coder 9.x.
-    $inlineControlSniff = \class_exists(\Drupal\Sniffs\ControlStructures\InlineControlStructureSniff::class)
+    $inlineControlSniff = \class_exists(InlineControlStructureSniff::class)
         ? 'Drupal.ControlStructures.InlineControlStructure'
         : 'Generic.ControlStructures.InlineControlStructure';
     self::assertSniffError($report, 5, sniffName: $inlineControlSniff, code: 'NotAllowed');
