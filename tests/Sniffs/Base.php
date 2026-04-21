@@ -7,6 +7,7 @@ declare(strict_types=1);
 
 namespace PreviousNext\CodingStandard\Tests\Sniffs;
 
+use Composer\InstalledVersions;
 use Drupal\Sniffs\Commenting\FileCommentSniff;
 use PHP_CodeSniffer\Config;
 use PHP_CodeSniffer\Files\File;
@@ -23,6 +24,7 @@ use function in_array;
 use function preg_replace;
 use function sprintf;
 use function strpos;
+use function version_compare;
 
 /**
  * @codeCoverageIgnore
@@ -218,6 +220,14 @@ abstract class Base extends TestCase {
     return [
       FileCommentSniff::class,
     ];
+  }
+
+  /**
+   * Check if drupal/coder 9.x or higher is installed.
+   */
+  protected static function isCoderVersion9OrHigher(): bool {
+    $version = InstalledVersions::getVersion('drupal/coder');
+    return $version !== null && version_compare($version, '9.0.0', '>=');
   }
 
 }
