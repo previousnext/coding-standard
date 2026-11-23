@@ -7,6 +7,9 @@ updates:
       day: "thursday"
       timezone: "Australia/Sydney"
       time: "10:00"
+    commit-message:
+      prefix: "build"
+      include: "scope"
     groups:
       composer-security-deps:
         applies-to: security-updates
