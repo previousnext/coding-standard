@@ -7,3 +7,41 @@ updates:
       day: "thursday"
       timezone: "Australia/Sydney"
       time: "10:00"
+    commit-message:
+      prefix: "build"
+      include: "scope"
+    cooldown:
+      default-days: 2
+    groups:
+      composer-deps:
+        patterns: [ "*" ]
+        update-types: [ "minor", "patch" ]
+      composer-major-deps:
+        patterns: [ "*" ]
+        update-types: [ "major" ]
+      composer-security-deps:
+        applies-to: security-updates
+        patterns: [ "*" ]
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "thursday"
+      timezone: "Australia/Sydney"
+      time: "10:00"
+    commit-message:
+      prefix: "build"
+      include: "scope"
+    cooldown:
+      default-days: 2
+    groups:
+      github-actions-deps:
+        patterns: [ "*" ]
+        update-types: [ "minor", "patch" ]
+      github-actions-major-deps:
+        patterns: [ "*" ]
+        update-types: [ "major" ]
+      github-actions-security-deps:
+        applies-to: security-updates
+        patterns: [ "*" ]
